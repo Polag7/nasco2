@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASCO - Industrial Cleaning & Hygiene Chemicals</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f3f8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e40af;
+            border-radius: 4px;
+        }
+        /* Inter font setup */
+        html { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nasco-primary': '#1e40af', /* Dark Blue */
+                        'nasco-secondary': '#34d399', /* Light Green for CTAs */
+                        'nasco-dark': '#0f172a',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-nasco-dark">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-nasco-primary tracking-tight">
+                NASCO
+                <span class="block text-xs font-medium text-gray-500 mt-1">FOOD-grade Industrial CLEANING & HYGIENE Chemicals</span>
+            </div>
+            <a href="https://wa.me/923321444065" target="_blank" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 bg-nasco-secondary text-nasco-dark font-semibold rounded-lg shadow-lg hover:bg-green-400 transition duration-300">
+                <!-- WhatsApp Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10c1.558 0 3.037-.376 4.38-1.031l2.583.844 1.76-2.583a9.945 9.945 0 001.031-4.38c0-5.523-4.477-10-10-10zm.5 15.655l-.04-.012c-1.574-.474-2.684-.962-3.153-1.077-.184-.044-.392-.083-.585-.083-.24 0-.46.06-.66.17-.18.1-.25.26-.33.35-.11.13-.23.23-.38.31s-.32.12-.48.12c-.28 0-.58-.1-.95-.25s-.64-.4-.87-.63c-.23-.23-.39-.49-.55-.78s-.24-.63-.24-1.05c0-.44.08-.82.17-1.12.08-.28.17-.5.28-.68.12-.17.24-.3.38-.4.14-.1.3-.18.45-.18.1 0 .22.02.34.05.12.03.25.07.4.1.15.03.3.06.45.06.1 0 .22-.05.32-.12.1-.07.2-.18.28-.35.08-.18.15-.38.22-.6.07-.22.1-.47.1-.78 0-.25-.05-.48-.15-.65-.1-.17-.25-.3-.45-.4-.2-.1-.45-.15-.7-.15-.05 0-.1 0-.17.02-.07.02-.15.05-.25.12-.1.07-.2.15-.3.25-.1.1-.2.2-.3.35-.1.15-.2.32-.3.52-.1.2-.2.42-.25.68-.05.25-.07.5-.07.78 0 .42.05.78.15 1.12.1.34.25.65.45.9.2.25.45.45.75.65.3.2.65.35 1.05.45s.83.15 1.35.15c.3 0 .58-.02.82-.07.25-.05.5-.12.75-.2.25-.08.5-.18.75-.3.25-.12.48-.27.7-.45.22-.18.42-.38.6-.6.18-.22.34-.45.48-.7.14-.25.26-.5.36-.78.1-.28.15-.58.15-.9.02-.27-.05-.55-.15-.8s-.2-.48-.35-.68c-.15-.2-.3-.35-.5-.45-.2-.1-.4-.15-.6-.15-.05 0-.1.02-.15.05-.05.02-.1.05-.15.08-.05.03-.1.07-.15.12-.05.05-.1.1-.15.17-.15.17-.25.35-.3.55-.05.2-.07.4-.07.6 0 .33.05.6.15.82.1.22.25.4.45.52.2.12.45.18.75.18.3 0 .58-.07.85-.2s.5-.3.72-.55c.22-.25.4-.55.55-.9.15-.35.25-.75.3-1.2h-.05z"/></svg>
+                <span>WhatsApp Us</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-nasco-primary text-white py-16 md:py-24 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                Industrial Strength. Food-Grade Safety.
+            </h1>
+            <p class="text-xl sm:text-2xl font-light max-w-4xl mx-auto opacity-90">
+                Providing HALAL Certified and FOOD-grade Industrial CLEANING & HYGIENE Chemicals for Industrial Hygiene and Food Safety.
+            </p>
+            <div class="mt-8">
+                <p class="text-sm font-semibold opacity-70">Trusted Since 2006. Available in <span class="text-yellow-300">Lahore, Karachi, UAE, UK, and more.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <main id="products-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <h2 class="text-3xl font-bold text-center mb-10 text-nasco-dark">Our Products Catalog (81 Items)</h2>
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Product cards will be injected here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-nasco-dark text-gray-300 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Brand Info -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-3">NASCO HYGIENE</h4>
+                    <p class="text-sm">FOOD-grade Industrial CLEANING & HYGIENE Chemicals. Trusted since 2006.</p>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-3">Contact & Support</h4>
+                    <p class="text-sm mb-1">We're Open 24/7 for shopping, exchanges, and bulk inquiries.</p>
+                    <p class="text-sm">Email: <a href="mailto:Nsco.pk@gmail.com" class="text-nasco-secondary hover:underline">Nsco.pk@gmail.com</a></p>
+                    <p class="text-sm mt-1">WhatsApp: <a href="https://wa.me/923321444065" target="_blank" class="text-nasco-secondary hover:underline">+92 332 1444065</a></p>
+                </div>
+                <!-- Locations -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-3">Available Locations</h4>
+                    <p class="text-sm">
+                        Lahore, Faisalabad, Multan, Rawalpindi-Islamabad, Peshawar, Karachi, UAE, Sweden and UK.
+                    </p>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-xs">
+                Copyright &copy; 2025 NASCO. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Product Data and Rendering -->
+    <script>
+        const WHATSAPP_NUMBER = '923321444065';
+        const productsData = [
+            { id: 1, title: 'Nasco A-42 UltraSonic Cleaning Liquid | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-a-42-ultrasonic-cleaning-liquid-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_923b90b7-23c0-424f-ae83-908db9fa54cd.png?v=1756899137&width=360' },
+            { id: 2, title: 'Nasco A-420 Alkaline Cleaner - Non-Foaming Alkaline CIP Cleaner | 1Litre-20Litre', url: 'https://nscohygiene.com/products/nasco-a-420-alkaline-cleaner-non-foaming-alkaline-cip-cleaner-1litre-20litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre.png?v=1757751068&width=360' },
+            { id: 3, title: 'Nasco Acid-O-Clean - Non-Foaming Acidic CIP Cleaner | 1Litre-10Litre', url: 'https://nscohygiene.com/products/nasco-acid-o-clean-non-foaming-acidic-cip-cleaner-1litre-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup_94916aec-d481-4869-998b-35c0361efef7.png?v=1757756622&width=360' },
+            { id: 4, title: 'Nasco AERO-GEL – Gel Air Freshener | 1 Litre', url: 'https://nscohygiene.com/products/nasco-aero-gel-gel-air-freshener-1-litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_49b0da57-f4cd-4890-8a2b-9fffc7f5634f.png?v=1758038515&width=360' },
+            { id: 5, title: 'Nasco All in One Monthly Budget Bundle | Pack of 6', url: 'https://nscohygiene.com/products/nasco-all-in-one-monthly-budget-bundle-pack-of-5', img: 'https://nscohygiene.com/cdn/shop/files/Bundle-with-phenyl.jpg?v=1752484948&width=360' },
+            { id: 6, title: 'Nasco All Purpose Car Cleaner & Disinfectant Spray | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-all-purpose-car-cleaner-disinfectant-spray-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_da6e2c0e-a772-42f8-a7fe-4cc466de7dc9.png?v=1758027743&width=360' },
+            { id: 7, title: 'Nasco All Purpose Car Cleaner Spray | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-all-purpose-car-cleaner-spray-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_6fef688f-d085-4666-a176-e6d225511d2f.png?v=1758026198&width=360' },
+            { id: 8, title: 'Nasco All Purpose Interior Cleaning & Disinfectant Gel | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-all-purpose-interior-cleaning-disinfectant-gel-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_79a3ef74-c699-4dfd-82eb-2e30a3167943.png?v=1758033029&width=360' },
+            { id: 9, title: 'Nasco Antibacterial Foaming Hand Soap with Pump Dispenser | Highly Concentrated - 500ml Makes 5 litre of Hand Soap', url: 'https://nscohygiene.com/products/nasco-antibacterial-foaming-hand-soap-with-pump-dispenser-4', img: 'https://nscohygiene.com/cdn/shop/files/Apple-New.png?v=1752400904&width=360' },
+            { id: 10, title: 'Nasco Black Garbage Liner Bags for Dustbins – 5 Sizes | Heavy-Duty | 1 KG Pack', url: 'https://nscohygiene.com/products/nasco-black-garbage-liner-bags-for-dustbins-5-sizes-heavy-duty-1-kg-pack', img: 'https://nscohygiene.com/cdn/shop/files/Apple_3de1556a-cd39-48c1-9eea-1d46afb848e9.png?v=1752154286&width=360' },
+            { id: 11, title: 'Nasco C3 Cattle Shampoo, Sanitizer & Deodorant | 1Litre-10Litre', url: 'https://nscohygiene.com/products/nasco-c3-cattle-shampoo-sanitizer-deodorant-1litre-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre1.png?v=1760555859&width=360' },
+            { id: 12, title: 'Nasco Car Wash Shampoo Ceramic Coated | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-ceramic-coated-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_f4096951-66e0-4de4-a5bc-03ff092d2eb7.png?v=1758007774&width=360' },
+            { id: 13, title: 'Nasco Car Wash Shampoo Graphene Coated | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-graphene-coated-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_621ae813-0ec3-4050-ad20-9ae20a32acd7.png?v=1758017636&width=360' },
+            { id: 14, title: 'Nasco Car Wash Shampoo Mud & Heavy Dirt Cleaner | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-mud-heavy-dirt-cleaner-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_31649881-6084-4230-b13d-d53b7cba5d5f.png?v=1758023162&width=360' },
+            { id: 15, title: 'Nasco Car Wash Shampoo Neutral | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-neutral-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_6fb64e7b-dc3f-4467-8f58-d83bf3845571.png?v=1758001825&width=360' },
+            { id: 16, title: 'Nasco Car Wash Shampoo Silicone Coated | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-silicone-coated-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-Litre.png?v=1758009519&width=360' },
+            { id: 17, title: 'Nasco Car Wash Shampoo Snow Foam | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-snow-foam-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_e9bf4797-9398-4e0f-ad1d-f7cb4f9e636e.png?v=1758004185&width=360' },
+            { id: 18, title: 'Nasco Car Wash Shampoo Waxed Coated | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-car-wash-shampoo-waxed-coated-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_3a90d354-8d22-4df9-9d70-ecb486232d29.png?v=1758006062&width=360' },
+            { id: 19, title: 'Nasco Car-Plus Car Washing Shampoo | 500 ML', url: 'https://nscohygiene.com/products/nasco-car-plus-car-washing-shampoo-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-New.png?v=1752319633&width=360' },
+            { id: 20, title: 'Nasco CARPEX – Car Carpet Cleaning Shampoo | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-carpex-car-carpet-cleaning-shampoo-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_9f617283-99cf-4d4c-bc39-ed1ebd858f59.png?v=1758042896&width=360' },
+            { id: 21, title: 'Nasco CHLOR-S Cleaner & Disinfectant for Blood Spills and Operation Rooms | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-chlor-s-cleaner-disinfectant-for-blood-spills-and-operation-rooms-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_b92b5c51-f0d3-44ca-97ec-d700bc14ae5d.png?v=1756922209&width=360' },
+            { id: 22, title: 'Nasco Chlorinall G – Foaming Chlorinated Cleaner | 1Litre-10Litre', url: 'https://nscohygiene.com/products/nasco-chlorinall-g-foaming-chlorinated-cleaner-1litre-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_eaf5ccf3-0c8f-40c2-9d67-0e79d128ca21.png?v=1760556120&width=360' },
+            { id: 23, title: 'Nasco D-600 Ready-to-Use Surface Sanitizer | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-d-600-ready-to-use-surface-sanitizer-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/D-600-New_cc2765c2-6073-4089-859b-62b358b5b436.png?v=1755439003&width=360' },
+            { id: 24, title: 'Nasco DASHX – Dashboard Cleaner & Polish | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-dashx-dashboard-cleaner-polish-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_dc5b1023-3d78-47e1-af11-287507ffc891.png?v=1758036242&width=360' },
+            { id: 25, title: 'Nasco Deamy General Purpose Cleaner & Disinfectant for Floors and Surfaces | 500Ml', url: 'https://nscohygiene.com/products/nasco-deamy-general-purpose-cleaner-disinfectant-for-floors-and-surfaces-500ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_a7e0a3e9-d992-41e2-85e2-2448cbcad001.png?v=1756923969&width=360' },
+            { id: 26, title: 'Nasco Deep Clean Power Pack | Saving Bundle 3 | Pack of 4', url: 'https://nscohygiene.com/products/nasco-deep-clean-power-pack-saving-bundle-3-pack-of-4', img: 'https://nscohygiene.com/cdn/shop/files/rn-image_picker_lib_temp_d80cbae0-8d93-4db6-8c07-c28c9cd8260a.jpg?v=1755624262&width=360' },
+            { id: 27, title: 'Nasco DEGRON – Car Engine Degreaser | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-degron-car-engine-degreaser-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_24c441fc-c11a-4a4b-9780-a135a35f0849.png?v=1758045581&width=360' },
+            { id: 28, title: 'Nasco Drain-X Heavy Duty Alkaline Drain Opener / Cleaner | 1Litre-10Litre', url: 'https://nscohygiene.com/products/nasco-drain-x-heavy-duty-alkaline-drain-opener-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/New-Mockup_0bf3ad9b-6b98-4488-ae14-ab19126be9bf.png?v=1762076083&width=360' },
+            { id: 29, title: 'Nasco Electro-D Electrostatic Spray Solution – Environmental & Air Decontaminant | 500Ml', url: 'https://nscohygiene.com/products/nasco-electro-d-electrostatic-spray-solution-environmental-air-decontaminant-500ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500ml1.png?v=1756896513&width=360' },
+            { id: 30, title: 'Nasco Fabri-Bright Color Fastening Solution for Colored Clothes | 500 ML', url: 'https://nscohygiene.com/products/nasco-fabri-bright-color-fastening-solution-for-colored-clothes-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/New-Mockup_cfd724b0-c36d-46e8-bd3a-74c6d127a27a.png?v=1752322171&width=360' },
+            { id: 31, title: 'Nasco Fabri-Clean Upholstery and Leather Cleaner | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-fabri-clean-upholstery-and-leather-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Fabri-Clean-new_73761dc1-0649-4a4f-a1a2-ff2769c1e035.png?v=1755439792&width=360' },
+            { id: 32, title: 'Nasco Fabri-Softener Premium Fabric Conditioner | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-fabri-softener-premium-fabric-conditioner-500ml-5litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_38c9302b-fd08-4b19-92ea-910939460116.png?v=1756835950&width=360' },
+            { id: 33, title: 'Nasco Fabri-White Whitening Solution for White Clothes | 500 ML', url: 'https://nscohygiene.com/products/nasco-fabri-white-whitening-solution-for-white-clothes-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Fabri-White_d1e223c5-dc6f-4404-acba-4b4396e6da9f.png?v=1752322692&width=360' },
+            { id: 34, title: 'Nasco Fabric Bleach Fabric Whitener & Stain Remover | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-fabric-bleach-fabric-whitener-stain-remover-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500ml_8e437794-2c48-46a4-81a0-fd32bb7a9d1d.png?v=1756840802&width=360' },
+            { id: 35, title: 'Nasco Fresh-Odor Air Freshener & Odor Eliminator | 500 ML', url: 'https://nscohygiene.com/products/nasco-fresh-odor-air-freshener-odor-eliminator-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_5189fd54-1073-4ae5-9f86-8511b62e74e2.png?v=1752323230&width=360' },
+            { id: 36, title: 'Nasco FRIGO Fridge, Freezer & Ice Cleaner | 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-frigo-fridge-freezer-ice-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_9b19eee7-a379-4a28-b6c5-74f1551a5a68.png?v=1755502387&width=360' },
+            { id: 37, title: 'Nasco General Clean "F" Floor Cleaner | Highly Concentrated - 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-general-clean-f-floor-cleaner-highly-concentrated-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Floor-Cleaner_555c94b3-dce2-4f84-9a43-94470b97f707.png?v=1755501813&width=360' },
+            { id: 38, title: 'Nasco General Clean-DC | Cleaner - Disinfectant - Fungicide | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-general-clean-dc-cleaner-disinfectant-fungicide-10-30-litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-5Litre_43de6a12-f3ab-4885-808a-660e8adb6c40.png?v=1756842381&width=360' },
+            { id: 39, title: 'Nasco GLOSSIQUE – Wax Polish Liquid | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-glossique-wax-polish-liquid-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_fd52ba46-9e8e-4d78-a086-83022891dac3.png?v=1758048180&width=360' },
+            { id: 40, title: 'Nasco Green Speckle Chlorinated Machine Dishwashing Compound | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-green-speckle-chlorinated-machine-dishwashing-compound-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_eadb44d5-321b-4066-87f3-3a7b80c0ac9e.png?v=1755504053&width=360' },
+            { id: 41, title: 'Nasco Grill Clean Alkaline Oven and Grill Cleaner | 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-grill-clean-alkaline-oven-and-grill-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_dd4f7da1-013c-4f81-910c-fb7fc4ca0571.png?v=1755503301&width=360' },
+            { id: 42, title: 'Nasco HEPA Filter Cleaner Specialized Cleaning Solution for HEPA & Air Filters | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-hepa-filter-cleaner-specialized-cleaning-solution-for-hepa-air-filters-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_e3d7126d-e61f-4ab8-9939-1e3fdc289146.png?v=1756920126&width=360' },
+            { id: 43, title: 'Nasco Instru-Milk Instrument Lubricant & Corrosion Protector | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-instru-milk-instrument-lubricant-corrosion-protector-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_e9155969-cd86-41c3-bef0-947e0c5f85db.png?v=1756918300&width=360' },
+            { id: 44, title: 'Nasco IPA 70% Surface Disinfectant | 500Ml-20Litre', url: 'https://nscohygiene.com/products/nasco-ipa-70-surface-disinfectant-500ml-20litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup_9a122c82-114b-486c-ada3-927ce941990c.png?v=1757759040&width=360' },
+            { id: 45, title: 'Nasco KAS-Clean A & B Cooling Pad Cleaner | 2 Litre', url: 'https://nscohygiene.com/products/nasco-kas-clean-a-b-cooling-pad-cleaner-2-litre', img: 'https://nscohygiene.com/cdn/shop/files/IMG_9446.jpg?v=1748424805&width=360' },
+            { id: 46, title: 'Nasco L-Executive Liquid Hand Soap | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-l-executive-liquid-hand-soap-500ml-5litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockups-500ml-pump.png?v=1756831086&width=360' },
+            { id: 47, title: 'Nasco LEATHIQUE – Leather Cleaner & Conditioner | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-leathique-leather-cleaner-conditioner-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_62b0a78f-018b-4880-878f-3b35ace75138.png?v=1758044223&width=360' },
+            { id: 48, title: 'Nasco Lime Scale Remover & Chrome Shiner | 500 ML', url: 'https://nscohygiene.com/products/nasco-lime-scale-remover-chrome-shiner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_6072d516-49ec-4604-a249-aa2b6e092fdf.png?v=1752324882&width=360' },
+            { id: 49, title: 'Nasco Liquid Laundry Anti-Fungal and Anti-Bacterial | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-liquid-laundry-anti-fungal-and-anti-bacterial-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Liquid-Laundary_8bb52225-c643-4bbc-b978-3bd2a948e66d.png?v=1755502138&width=360' },
+            { id: 50, title: 'Nasco LUCID (Bathrooms and Kitchen) Tile & Grout Cleaner | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-lucid-bathrooms-and-kitchen-tile-grout-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_aefc4975-1413-4c1c-ab2d-f4944fbbab9f.png?v=1755502843&width=360' },
+            { id: 51, title: 'Nasco Lustrex Stainless Steel Rust Cleaner and Shiner | 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-lustrex-stainless-steel-rust-cleaner-and-shiner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_a9360820-c640-4f1e-88d5-b530d18d6435.png?v=1755438434&width=360' },
+            { id: 52, title: 'Nasco Marmitax Dish Washing Liquid Detergent for Pots and Pans | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-marmitax-dish-washing-liquid-detergent-for-pots-and-pans-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Dish-Wash-New_4d2661e9-2a09-40be-a772-e79b3bd88e95.png?v=1755439361&width=360' },
+            { id: 53, title: 'Nasco Multi Purpose Cleaner | 500 Ml', url: 'https://nscohygiene.com/products/nasco-multi-purpose-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_196ebe87-17a6-4012-b174-cd61e8005223.png?v=1752325532&width=360' },
+            { id: 54, title: 'Nasco Multi-Phen Concentrated Phenyl | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-multi-phen-concentrated-phenyl-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Multi-Phen_942e3998-edf9-4da9-b66c-dadcd3d3a987.png?v=1755504318&width=360' },
+            { id: 55, title: 'Nasco Neutra-Soak Pre-Soaking Solution for Medical Instruments | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-neutra-soak-pre-soaking-solution-for-medical-instruments-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_9b498cfe-f50a-483a-8c6b-1fca0a908cc0.png?v=1756901661&width=360' },
+            { id: 56, title: 'Nasco PERACE High-Level Disinfectant (HLD) for Instruments & Surfaces | 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-perace-high-level-disinfectant-hld-for-instruments-surfaces-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_33e99e45-7522-466d-a92f-428881ee225d.png?v=1757773907&width=360' },
+            { id: 57, title: 'Nasco Power Force Toilet & Surface Cleaner – Thick Bleach Gel | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-power-force-toilet-surface-cleaner-thick-bleach-gel-10-30-litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_65a3e8c1-a9b4-4cbd-9c9e-55efb2aaa395.png?v=1756894667&width=360' },
+            { id: 58, title: 'Nasco PRO-CLEAN Chlorinated Foaming Drain Cleaner & Sanitizer | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-pro-clean-chlorinated-foaming-drain-cleaner-sanitizer-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup_0a8c1c82-0c5e-428e-9c3a-53813302beae.png?v=1758538721&width=360' },
+            { id: 59, title: 'Nasco PRO-SCRUB Surgical Scrub Soap – Antimicrobial Hand & Skin Cleanser | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-pro-scrub-surgical-scrub-soap-antimicrobial-hand-skin-cleanser-500ml-5litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_1a60744f-bb9e-45bb-8a9f-aa6a5c6504fa.png?v=1756831346&width=360' },
+            { id: 60, title: 'Nasco PVC & uPVC Wall Panel Cleaner | 500 ML', url: 'https://nscohygiene.com/products/nasco-pvc-upvc-wall-panel-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_2ae6a3ab-b653-452a-8e1b-d0d751dc8d5c.png?v=1752326009&width=360' },
+            { id: 61, title: 'Nasco RIMXEL – Rim Cleaner, Rust Remover & Shiner | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-rimxel-rim-cleaner-rust-remover-shiner-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_1ca7d951-7857-4b31-b1ee-705e86a6b704.png?v=1758037829&width=360' },
+            { id: 62, title: 'Nasco RUBRIX – Tire Cleaner & Shiner | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-rubrix-tire-cleaner-shiner-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_4c62e473-a806-4721-b677-a2f160ade34b.png?v=1758039986&width=360' },
+            { id: 63, title: 'Nasco Safon Food-safe & food-grade Liquid Hand Soap | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-safon-food-safe-food-grade-liquid-hand-soap', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml-Pump.png?v=1758536822&width=360' },
+            { id: 64, title: 'Nasco Sani-Floor Disinfectant & Cleaner | 500 ML', url: 'https://nscohygiene.com/products/nasco-sani-floor-disinfectant-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockup.png?v=1752400828&width=360' },
+            { id: 65, title: 'Nasco SANI-KLEAN – Food-Grade Antimicrobial Solution | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-sani-klean-food-grade-antimicrobial-solution-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/500ML.png?v=1761475663&width=360' },
+            { id: 66, title: 'Nasco Sanifect Bathroom Cleaner | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-sanifect-bathroom-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Final.png?v=1755501420&width=360' },
+            { id: 67, title: 'Nasco Sanifect Toilet Cleaner Disinfectant Bathroom Cleaner | 1 Litre', url: 'https://nscohygiene.com/products/nasco-sanifect-toilet-sweep-disinfectant-bathroom-cleaner-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/mockup.jpg?v=1748431822&width=360' },
+            { id: 68, title: 'Nasco Sanigel 80% Alcohol Hand Sanitiser | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-sanigel-80-alcohol-hand-sanitiser-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_39a794d2-6dff-43d7-84e1-406c99db01d0.png?v=1755502593&width=360' },
+            { id: 69, title: 'Nasco Sodium Hypochlorite – 12% Active Chlorine | 5Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-sodium-hypochlorite-12-active-chlorine', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-10Litre_a4177244-928b-4cbb-bf29-5322b24adf13.png?v=1761156719&width=360' },
+            { id: 70, title: 'Nasco Solar Panel Cleaner | Highly Concentrated - 1 Litre', url: 'https://nscohygiene.com/products/nasco-solar-panel-cleaner-highly-concentrated-1-litre', img: 'https://nscohygiene.com/cdn/shop/files/Solar-Clean_84fe8103-debc-44b6-a687-40b98fd8db81.png?v=1752326479&width=360' },
+            { id: 71, title: 'Nasco TARONIX – Tar & Glue Remover | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-taronix-tar-glue-remover-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_f66b89a9-dd3d-4367-893b-10fb4ca12c04.png?v=1758047122&width=360' },
+            { id: 72, title: 'Nasco TERMI-SHIELD – Odorless Termite Killer – Wood Protection & Pest Control | 500Ml', url: 'https://nscohygiene.com/products/nasco-termi-shield-odorless-termite-killer-wood-protection-pest-control-500ml', img: 'https://nscohygiene.com/cdn/shop/files/Spray-Mockup.png?v=1757673575&width=360' },
+            { id: 73, title: 'Nasco Thermo-Guard – Anti-Rust & Anti-Freeze Radiator Coolant | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-thermo-guard-anti-rust-anti-freeze-radiator-coolant-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_1ab14a01-e9a0-410d-8489-896e5e2f4bae.png?v=1758041396&width=360' },
+            { id: 74, title: 'Nasco TIREX – Car Wheel Cleaner | 1Litre-30Litre', url: 'https://nscohygiene.com/products/nasco-tirex-car-wheel-cleaner-1litre-30litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-1Litre_bc43caf7-29a5-4dfb-89fb-6e972b3c555b.png?v=1758034894&width=360' },
+            { id: 75, title: 'Nasco Ultimate Clean Trio | Saving Bundle 1 | Pack of 3', url: 'https://nscohygiene.com/products/nasco-ultimate-clean-trio-saving-bundle-1-pack-of-3', img: 'https://nscohygiene.com/cdn/shop/files/rn-image_picker_lib_temp_6fe1c601-babe-4f44-98e2-7e4929ab316d.jpg?v=1755625362&width=360' },
+            { id: 76, title: 'Nasco Ultimate Clean Trio | Saving Bundle 2 | Pack of 3', url: 'https://nscohygiene.com/products/nasco-ultimate-clean-trio-saving-bundle-2-pack-of-3', img: 'https://nscohygiene.com/cdn/shop/files/Bundle-01.jpg?v=1752412270&width=360' },
+            { id: 77, title: 'Nasco Ultimate Home Cleaning Bundle | Pack of 6', url: 'https://nscohygiene.com/products/nasco-ultimate-home-cleaning-bundle-pack-of-6', img: 'https://nscohygiene.com/cdn/shop/files/rn-image_picker_lib_temp_61009f5d-5add-4f29-8378-f893c030bceb.jpg?v=1755719320&width=360' },
+            { id: 78, title: 'Nasco Ultra-Gel High-Quality Ultrasound Gel | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-ultra-gel-high-quality-ultrasound-gel-500ml-10litre', img: 'https://nscohygiene.com/cdn/shop/files/Mockup-500Ml_d72ce0f0-22d4-416d-9da6-526c622c4f8f.png?v=1756906217&width=360' },
+            { id: 79, title: 'Nasco White Distilled Vinegar | 500Ml-10Litre', url: 'https://nscohygiene.com/products/nasco-white-distilled-vinegar-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Vinegar.png?v=1755505065&width=360' },
+            { id: 80, title: 'Nasco Windeze Glass & Multi-Surface Cleaner | 500Ml-10Litre', url: 'https://nscohygiene.com/products/windeze-glass-multi-surface-cleaner-highly-concentrated-liquid', img: 'https://nscohygiene.com/cdn/shop/files/New-Mockup_0a36c11d-e41f-4f39-a187-6389cc6bd7fc.png?v=1755504822&width=360' },
+            { id: 81, title: 'Nasco Wood Glow Premium Wood Polish Spray | 500Ml-5Litre', url: 'https://nscohygiene.com/products/nasco-wood-glow-premium-wood-polish-spray-500-ml', img: 'https://nscohygiene.com/cdn/shop/files/Mockups_e4080b5d-ee56-4c63-b753-30d790e451bf.png?v=1755503784&width=360' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const productGrid = document.getElementById('product-grid');
+
+            productsData.forEach(product => {
+                const whatsappMessage = encodeURIComponent(`Hello, I am interested in the product: ${product.title}. Can you please provide more details? (Product URL: ${product.url})`);
+                const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+
+                const cardHtml = `
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                        <!-- Product Image -->
+                        <div class="p-4 flex-shrink-0 flex items-center justify-center bg-gray-100 h-64">
+                            <img src="${product.img}"
+                                 alt="${product.title}"
+                                 class="max-h-full max-w-full object-contain transition-opacity duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/360x360/e0e7ff/1e40af?text=NASCO+Product'"
+                                 loading="lazy"
+                            >
+                        </div>
+                        
+                        <div class="p-5 flex flex-col flex-grow">
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-nasco-dark mb-3 flex-grow">
+                                <a href="${product.url}" target="_blank" class="hover:text-nasco-primary transition duration-300">
+                                    ${product.title}
+                                </a>
+                            </h3>
+
+                            <!-- Actions -->
+                            <div class="space-y-3 mt-4">
+                                <!-- View Details Button -->
+                                <a href="${product.url}" target="_blank" class="block w-full py-2 text-center text-sm font-medium bg-nasco-primary text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+                                    View Details
+                                </a>
+                                <!-- WhatsApp Button -->
+                                <a href="${whatsappLink}" target="_blank" class="block w-full py-2 text-center text-sm font-medium bg-nasco-secondary text-nasco-dark rounded-lg hover:bg-green-400 transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                                    <!-- WhatsApp Icon SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10c1.558 0 3.037-.376 4.38-1.031l2.583.844 1.76-2.583a9.945 9.945 0 001.031-4.38c0-5.523-4.477-10-10-10zm.5 15.655l-.04-.012c-1.574-.474-2.684-.962-3.153-1.077-.184-.044-.392-.083-.585-.083-.24 0-.46.06-.66.17-.18.1-.25.26-.33.35-.11.13-.23.23-.38.31s-.32.12-.48.12c-.28 0-.58-.1-.95-.25s-.64-.4-.87-.63c-.23-.23-.39-.49-.55-.78s-.24-.63-.24-1.05c0-.44.08-.82.17-1.12.08-.28.17-.5.28-.68.12-.17.24-.3.38-.4.14-.1.3-.18.45-.18.1 0 .22.02.34.05.12.03.25.07.4.1.15.03.3.06.45.06.1 0 .22-.05.32-.12.1-.07.2-.18.28-.35.08-.18.15-.38.22-.6.07-.22.1-.47.1-.78 0-.25-.05-.48-.15-.65-.1-.17-.25-.3-.45-.4-.2-.1-.45-.15-.7-.15-.05 0-.1 0-.17.02-.07.02-.15.05-.25.12-.1.07-.2.15-.3.25-.1.1-.2.2-.3.35-.1.15-.2.32-.3.52-.1.2-.2.42-.25.68-.05.25-.07.5-.07.78 0 .42.05.78.15 1.12.1.34.25.65.45.9.2.25.45.45.75.65.3.2.65.35 1.05.45s.83.15 1.35.15c.3 0 .58-.02.82-.07.25-.05.5-.12.75-.2.25-.08.5-.18.75-.3.25-.12.48-.27.7-.45.22-.18.42-.38.6-.6.18-.22.34-.45.48-.7.14-.25.26-.5.36-.78.1-.28.15-.58.15-.9.02-.27-.05-.55-.15-.8s-.2-.48-.35-.68c-.15-.2-.3-.35-.5-.45-.2-.1-.4-.15-.6-.15-.05 0-.1.02-.15.05-.05.02-.1.05-.15.08-.05.03-.1.07-.15.12-.05.05-.1.1-.15.17-.15.17-.25.35-.3.55-.05.2-.07.4-.07.6 0 .33.05.6.15.82.1.22.25.4.45.52.2.12.45.18.75.18.3 0 .58-.07.85-.2s.5-.3.72-.55c.22-.25.4-.55.55-.9.15-.35.25-.75.3-1.2h-.05z"/></svg>
+                                    <span>Inquire via WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productGrid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        });
+    </script>
+</body>
+</html>
